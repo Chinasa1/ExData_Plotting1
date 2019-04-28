@@ -25,7 +25,7 @@ powerCons <- read.table(file = "household_power_consumption.txt", na.strings = "
 powerCons <- powerCons[(powerCons$Date=="1/2/2007" | powerCons$Date == "2/2/2007"),]
 
 #)Plot
-hist(powerCons$Global_active_power, main = "Global Active Power", xlab = "Global Active Power (killowatts)", ylab="Frequency")
+hist(powerCons$Global_active_power, main = "Global Active Power", col = "red", xlab = "Global Active Power (killowatts)", ylab="Frequency")
 
 
 #save the file
